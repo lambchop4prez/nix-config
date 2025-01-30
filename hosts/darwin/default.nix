@@ -3,9 +3,13 @@ let
     user = "tmc";
 in
 {
+    imports = [
+        ../../modules/darwin/home-manager.nix
+    ];
     nix = {
         package = pkgs.nix;
         settings = {
+            trusted-users = ["@admin" "${user}"];
             experimental-features = "nix-command flakes";
         };
     };
