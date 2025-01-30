@@ -18,6 +18,24 @@ in
             };
             NSGlobalDomain = {
                 AppleShowAllExtensions = true;
+                # AppleHighlightColor = "0.968627 0.831373 1.000000";
+                AppleInterfaceStyle = "Dark";
+                AppleShowScrollBars = "Always";
+                NSAutomaticDashSubstitutionEnabled = false;
+                NSAutomaticInlinePredictionEnabled = false;
+                NSAutomaticQuoteSubstitutionEnabled = false;
+                NSAutomaticSpellingCorrectionEnabled = false;
+                NSDocumentSaveNewDocumentsToCloud = false;
+                NSNavPanelExpandedStateForSaveMode = true;
+                NSNavPanelExpandedStateForSaveMode2 = true;
+                NSUseAnimatedFocusRing = false;
+                PMPrintingExpandedStateForPrint = true;
+                PMPrintingExpandedStateForPrint2 = true;
+                "com.apple.keyboard.fnState" = true;
+            };
+            WindowManager = {  
+                EnableStandardClickToShowDesktop = false;
+
             };
             dock = {
                 autohide = false;
@@ -25,6 +43,13 @@ in
             };
             finder = {
                 _FXShowPosixPathInTitle = true;
+                _FXSortFoldersFirst = true;
+                FXDefaultSearchScope = "SCcf";
+                FXEnableExtensionChangeWarning = false;
+                FXPreferredViewStyle = "Nlsv";
+                ShowStatusBar = true;
+                ShowPathbar = true;
+                
             };
         };
     };
