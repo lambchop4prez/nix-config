@@ -39,7 +39,13 @@ in
             };
             dock = {
                 autohide = false;
+                orientation = "left";
                 show-recents = false;
+
+                wvous-tl-corner = 3; # Application Windows
+                wvous-tr-corner = 12; # Notification Center
+                wvous-bl-corner = 2; # All Windows
+                wvous-br-corner =  4; # Desktop
             };
             finder = {
                 _FXShowPosixPathInTitle = true;
@@ -49,7 +55,7 @@ in
                 FXPreferredViewStyle = "Nlsv";
                 ShowStatusBar = true;
                 ShowPathbar = true;
-                
+
             };
         };
     };
