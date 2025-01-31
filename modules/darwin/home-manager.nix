@@ -20,6 +20,7 @@ in
                 stateVersion = "24.11";
             };
             programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
+
         };
     };
 }
