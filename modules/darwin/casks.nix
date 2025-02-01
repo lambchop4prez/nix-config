@@ -28,4 +28,5 @@ _:
   "visual-studio-code"
   "vlc"
   "wireshark"
+  "zed"
 ]
