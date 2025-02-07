@@ -38,7 +38,7 @@ in
                 PMPrintingExpandedStateForPrint2 = true;
                 "com.apple.keyboard.fnState" = true;
             };
-            WindowManager = {  
+            WindowManager = {
                 EnableStandardClickToShowDesktop = false;
 
             };
@@ -66,5 +66,5 @@ in
     };
     environment.systemPackages = with pkgs; (import ../../modules/shared/packages.nix { inherit pkgs; });
 
-    
+
 }

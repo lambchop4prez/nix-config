@@ -36,7 +36,7 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Rudy
-    darwinConfigurations = nixpkgs.lib.genAttrs darwinSystems (system: 
+    darwinConfigurations = nixpkgs.lib.genAttrs darwinSystems (system:
       darwin.lib.darwinSystem {
         inherit system;
         specialArgs = inputs;
