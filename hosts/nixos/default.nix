@@ -6,15 +6,15 @@ in
   imports = [
     ../../modules/shared
   ];
-  boot = {
-    loader = {
-      systemd-boot = {
-        enabled = true;
-        configurationLimit = 32;
-      };
-    };
-  };
+  # boot = {
+  #   loader = {
+  #     systemd-boot = {
+  #       enabled = true;
+  #       configurationLimit = 32;
+  #     };
+  #   };
+  # };
   system = {
-    stateVersion = "25.05";
+    stateVersion = "24.11";
   };
 }
