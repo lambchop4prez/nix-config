@@ -32,7 +32,7 @@
   let
     user = "tmc";
     darwinSystems = ["aarch64-darwin" "x86_64-darwin"];
-    linuxSystems = ["aarch64-linux", "x86_64-linux"];
+    linuxSystems = ["aarch64-linux" "x86_64-linux"];
   in
   {
     # Build darwin flake using:
