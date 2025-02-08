@@ -32,6 +32,7 @@
   let
     user = "tmc";
     darwinSystems = ["aarch64-darwin" "x86_64-darwin"];
+    linuxSystems = ["aarch64-linux", "x86_64-linux"];
   in
   {
     # Build darwin flake using:
@@ -57,6 +58,16 @@
             };
           }
           ./hosts/darwin
+        ];
+      }
+    );
+
+    linuxConfigurations = nixpkgs.lib.genAttrs linuxSystems (system:
+      nippkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = inputs;
+        modules = [
+          ./hosts/nixos
         ];
       }
     );

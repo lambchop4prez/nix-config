@@ -34,6 +34,7 @@ with pkgs; [
     opentofu
     sops
     syft
+    talosctl
     tree
     vim
     wget

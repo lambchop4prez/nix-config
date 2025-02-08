@@ -6,14 +6,8 @@ in
     imports = [
         ../../modules/darwin/homebrew.nix
         ../../modules/darwin/home-manager.nix
+        ../../modules/shared
     ];
-    nix = {
-        package = pkgs.nix;
-        settings = {
-            trusted-users = ["@admin" "${user}"];
-            experimental-features = "nix-command flakes";
-        };
-    };
     system = {
         stateVersion = 5;
         configurationRevision = self.rev or self.dirtyRev or null;
@@ -64,7 +58,7 @@ in
             };
         };
     };
-    environment.systemPackages = with pkgs; (import ../../modules/shared/packages.nix { inherit pkgs; });
+
 
 
 }
