@@ -2,6 +2,7 @@
 with pkgs; [
     age
     age-plugin-yubikey
+    awscli2
     bat
     coreutils
     curl

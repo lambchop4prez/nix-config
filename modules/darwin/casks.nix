@@ -1,6 +1,7 @@
 _:
 [
   "balenaetcher"
+  "drawio"
   "firefox"
   "google-chrome"
   "ghostty"
