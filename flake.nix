@@ -63,7 +63,7 @@
     );
 
     linuxConfigurations = nixpkgs.lib.genAttrs linuxSystems (system:
-      nippkgs.lib.nixosSystem {
+      nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = inputs;
         modules = [
