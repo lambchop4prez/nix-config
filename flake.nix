@@ -62,7 +62,7 @@
       }
     );
 
-    linuxConfigurations = nixpkgs.lib.genAttrs linuxSystems (system:
+    nixosConfigurations = nixpkgs.lib.genAttrs linuxSystems (system:
       nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = inputs;
