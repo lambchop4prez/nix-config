@@ -4,7 +4,6 @@ let
 in
 {
   imports = [
-    /etc/nixos/hardware-configuration.nix
     ../../modules/shared
   ];
   # boot = {
