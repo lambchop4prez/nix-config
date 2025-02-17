@@ -31,15 +31,28 @@
   outputs = inputs@{ self, darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-bundle, homebrew-cask }:
   let
     user = "tmc";
+    macs = {
+      "Rudy" = {
+        system = "x86_64-darwin";
+      };
+      "Jocelyn" = {
+        system = "aarch64-darwin";
+      };
+      "Lenny" = {
+        system = "aarch64-darwin";
+      };
+    };
+    macHosts = nixpkgs.lib.attrNames macs;
     darwinSystems = ["aarch64-darwin" "x86_64-darwin"];
     linuxSystems = ["aarch64-linux" "x86_64-linux"];
   in
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Rudy
-    darwinConfigurations = nixpkgs.lib.genAttrs darwinSystems (system:
+    test = nixpkgs.lib.attrNames macs;
+    darwinConfigurations = nixpkgs.lib.genAttrs macHosts (host:
       darwin.lib.darwinSystem {
-        inherit system;
+        system = macs.${host}.system;
         specialArgs = inputs;
         modules = [
           home-manager.darwinModules.home-manager
