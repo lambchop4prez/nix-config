@@ -41,6 +41,9 @@
       "Lenny" = {
         system = "aarch64-darwin";
       };
+      "Seymour" = {
+        system = "aarch64-darwin";
+      };
     };
     macHosts = nixpkgs.lib.attrNames macs;
     darwinSystems = ["aarch64-darwin" "x86_64-darwin"];
