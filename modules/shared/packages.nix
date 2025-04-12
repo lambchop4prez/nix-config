@@ -4,12 +4,14 @@ with pkgs; [
     age-plugin-yubikey
     awscli2
     bat
+    corepack
     coreutils
     curl
     direnv
     docker
     docker-buildx
     docker-compose
+    dotnet-sdk
     gh
     git
     gnumake
@@ -32,13 +34,16 @@ with pkgs; [
     nodePackages.npm
     openssh
     opentofu
+    pre-commit
     sops
     syft
     talosctl
     tree
     vim
     wget
+    yarn
     yq
     zip
     zsh
+
 ]

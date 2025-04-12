@@ -32,6 +32,8 @@ in
             alias gc='git commit'
             alias gp='git pull'
             autoload -Uz promptinit && promptinit && prompt pure
+            export PATH="$PATH:/Users/${user}/.dotnet/tools"
+            export DOTNET_ROOT="${pkgs.dotnet-sdk}/share/dotnet"
         '';
         antidote = {
             enable = true;
