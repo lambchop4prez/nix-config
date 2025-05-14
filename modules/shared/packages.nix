@@ -5,15 +5,15 @@ with pkgs; [
     awscli2
     bat
     corepack
-    coreutils
+    colima
     curl
     direnv
     docker
     docker-buildx
     docker-compose
     dotnet-sdk
+    fluxcd
     gh
-    git
     gnumake
     gnupg
     go
@@ -26,24 +26,21 @@ with pkgs; [
     ipmitool
     jq
     jwt-cli
+    k9s
     kubectl
     kubernetes-helm
     nmap
     nodejs
     nodePackages.prettier
     nodePackages.npm
-    openssh
     opentofu
     pre-commit
     sops
+    step-cli
     syft
     talosctl
-    tree
-    vim
     wget
-    yarn
+    yarn-berry
     yq
-    zip
-    zsh
 
 ]

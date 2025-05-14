@@ -8,6 +8,7 @@ in
         ../../modules/darwin/home-manager.nix
         ../../modules/shared
     ];
+    nix.enable = false;
     system = {
         stateVersion = 5;
         configurationRevision = self.rev or self.dirtyRev or null;

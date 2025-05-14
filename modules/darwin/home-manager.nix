@@ -12,11 +12,14 @@ in
 
     home-manager = {
         useGlobalPkgs = true;
+        useUserPackages = true;
         users.${user} = {pkgs, config, lib, ...}:{
             home = {
                 stateVersion = "24.11";
+                packages = import ../shared/packages.nix { inherit config pkgs lib; };
             };
             programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
+            
         };
     };
 }
