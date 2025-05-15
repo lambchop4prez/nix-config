@@ -25,7 +25,7 @@ in
     };
     zsh = {
         enable = true;
-        initExtra = ''
+        initContent = ''
             # Don't require escaping globbing characters in zsh.
             unsetopt nomatch
             alias gs='git status'
