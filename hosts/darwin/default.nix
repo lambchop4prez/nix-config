@@ -118,6 +118,9 @@ in
                     AddressesIncludeNameOnPasteboard = false;
                     DisableInlineAttachmentViewing = true;
                 };
+                "com.apple.TimeMachine" = {
+                    DoNotOfferNewDisksForBackup = true;
+                };
             };
         };
     };
