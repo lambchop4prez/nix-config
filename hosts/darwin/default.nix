@@ -11,6 +11,7 @@ in
     nix.enable = false;
     system = {
         stateVersion = 5;
+        primaryUser = user;
         configurationRevision = self.rev or self.dirtyRev or null;
         defaults = {
             LaunchServices = {

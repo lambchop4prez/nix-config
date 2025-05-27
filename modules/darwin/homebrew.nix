@@ -6,6 +6,6 @@
         masApps = {
             "Bitwarden" = 1352778147;
             "AdGuard for Safari" = 1440147259;
-        }
+        };
     };
 }
