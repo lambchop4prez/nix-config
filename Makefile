@@ -1,6 +1,6 @@
 .PHONY: update
 update:
-	nix run nix-darwin -- switch --flake .
+	sudo nix run nix-darwin -- switch --flake .
 
 .PHONY: clean
 clean:

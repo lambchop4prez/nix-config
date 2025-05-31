@@ -1,6 +1,7 @@
 _:
 [
   "balenaetcher"
+  "coolterm"
   "drawio"
   "discord"
   "firefox"
