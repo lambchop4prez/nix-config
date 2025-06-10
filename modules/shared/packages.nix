@@ -12,6 +12,7 @@ with pkgs; [
     docker-buildx
     docker-compose
     dotnet-sdk
+    esphome
     fluxcd
     gh
     gnumake
