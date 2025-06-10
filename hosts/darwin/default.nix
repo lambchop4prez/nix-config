@@ -24,10 +24,12 @@ in
         extraOptions = ''
             experimental-features = nix-command flakes
         '';
-        linux-builder = {
-            enable = true;
-            systems = [ "x86_64-linux" "aarch64-linux"];
-        };
+        # linux-builder = {
+        #     enable = true;
+        #     systems = [ "x86_64-linux" "aarch64-linux"];
+        #     # package = pkgs.darwin.linux-builder-x86_64;
+        #     config.boot.binfmt.emulatedSystems = ["x86_64-linux"];
+        # };
     };
     system = {
         stateVersion = 5;
