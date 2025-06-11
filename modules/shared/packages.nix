@@ -4,7 +4,7 @@ with pkgs; [
     age-plugin-yubikey
     awscli2
     bat
-    corepack
+    # corepack
     colima
     curl
     direnv
@@ -43,5 +43,4 @@ with pkgs; [
     wget
     yarn-berry
     yq
-
 ]
