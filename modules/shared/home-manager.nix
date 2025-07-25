@@ -10,6 +10,13 @@ in
         enableZshIntegration = true;
         nix-direnv.enable = true;
     };
+    # ghostty = {
+    #     enable = true;
+    #     enableZshIntegration = true;
+    #     settings = {
+    #         font-family = "IntoneMono NFM";
+    #     };
+    # };
     git = {
         enable = true;
         userEmail = gituser;
@@ -21,8 +28,26 @@ in
             pull.rebase = false;
             push.autoSetupRemote = true;
             fetch.prune = true;
+            branch.sort = "-committerdate";
+            tag.sort = "-version:refname";
+            column.ui = "auto";
+            maintenance.auto = true;
+            maintenance.strategy = "incremental";
+            core.compression = 9;
+            commit.verbose = true;
         };
     };
+    # vscode = {
+    #     enable = true;
+    #     profiles.default.userSettings = {
+    #         # This property will be used to generate settings.json:
+    #         # https://code.visualstudio.com/docs/getstarted/settings#_settingsjson
+    #         "git.confirmSync" = false;
+    #         "editor.formatOnSave" = true;
+    #         "editor.fontLigatures" = true;
+    #         "editor.fontFamily" = "IntoneMono Nerd Font Mono";
+    #     };
+    # };
     zsh = {
         enable = true;
         initContent = ''
@@ -50,6 +75,7 @@ in
                 "belak/zsh-utils path:completion"
                 "sindresorhus/pure     kind:fpath"
                 "mattmc3/zfunctions"
+                "zshzoo/macos conditional:is-macos"
                 "zsh-users/zsh-autosuggestions"
                 "zdharma-continuum/fast-syntax-highlighting kind:defer"
                 "zsh-users/zsh-history-substring-search"

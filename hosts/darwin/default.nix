@@ -10,25 +10,16 @@ in
     ];
     nix = {
         enable = true;
-        settings = {
-            trusted-users = ["@admin" "${user}"];
-            substituters = [ "https://nix-community.cachix.org" "https://cache.nixos.org" ];
-            trusted-public-keys = [ "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs=" ];
-            experimental-features = "nix-command flakes";
-        };
         gc = {
             automatic = true;
             interval = { Weekday = 0; Hour = 2; Minute = 39; };
             options = "--delete-older-than 30d";
         };
-        extraOptions = ''
-            experimental-features = nix-command flakes
-        '';
         # linux-builder = {
         #     enable = true;
         #     systems = [ "x86_64-linux" "aarch64-linux"];
         #     # package = pkgs.darwin.linux-builder-x86_64;
-        #     config.boot.binfmt.emulatedSystems = ["x86_64-linux"];
+        #     # config.boot.binfmt.emulatedSystems = ["x86_64-linux"];
         # };
     };
     system = {

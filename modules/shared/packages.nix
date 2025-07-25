@@ -31,15 +31,17 @@ with pkgs; [
     kubectl
     kubernetes-helm
     nmap
-    nodejs
     nodePackages.prettier
     nodePackages.npm
     opentofu
     pre-commit
+    platformio
+    python3
     sops
     step-cli
     syft
     talosctl
+    terragrunt
     wget
     yarn-berry
     yq

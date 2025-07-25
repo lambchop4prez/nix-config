@@ -2,6 +2,7 @@
 with pkgs; [
     git
     coreutils
+    nodejs
     openssh
     openssl
     tree
