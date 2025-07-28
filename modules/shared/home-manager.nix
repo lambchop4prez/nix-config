@@ -56,9 +56,14 @@ in
             alias gs='git status'
             alias gc='git commit'
             alias gp='git pull'
-            autoload -Uz promptinit && promptinit && prompt pure
+            
             export PATH="$PATH:/Users/${user}/.dotnet/tools"
             export DOTNET_ROOT="${pkgs.dotnet-sdk}/share/dotnet"
+            # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+            # Initialization code that may require console input (password prompts, [y/n]
+            # confirmations, etc.) must go above this block; everything else may go below.
+            
+            source ~/.p10k.zsh
         '';
         antidote = {
             enable = true;
@@ -73,12 +78,13 @@ in
                 "belak/zsh-utils path:prompt"
                 "belak/zsh-utils path:utility"
                 "belak/zsh-utils path:completion"
-                "sindresorhus/pure     kind:fpath"
+                # "sindresorhus/pure     kind:fpath"
                 "mattmc3/zfunctions"
                 "zshzoo/macos conditional:is-macos"
                 "zsh-users/zsh-autosuggestions"
                 "zdharma-continuum/fast-syntax-highlighting kind:defer"
                 "zsh-users/zsh-history-substring-search"
+                "romkatv/powerlevel10k"
             ];
         };
     };
