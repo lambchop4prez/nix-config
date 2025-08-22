@@ -9,7 +9,7 @@ _:
   "ghostty"
   "hex-fiend"
   "keepassx"
-  "mgba"
+  "openemu"
   "microsoft-teams"
   "mqtt-explorer"
   "multipatch"
@@ -28,6 +28,6 @@ _:
   "utm"
   "visual-studio-code"
   "vlc"
-  "wireshark"
+  # "wireshark"
   "zed"
 ]

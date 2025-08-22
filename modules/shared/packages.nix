@@ -4,7 +4,6 @@ with pkgs; [
     age-plugin-yubikey
     awscli2
     bat
-    # corepack
     colima
     curl
     direnv
@@ -13,6 +12,7 @@ with pkgs; [
     docker-compose
     dotnet-sdk
     esphome
+    fastfetch
     fluxcd
     gh
     gnumake
@@ -36,6 +36,7 @@ with pkgs; [
     opentofu
     pre-commit
     platformio
+    pnpm
     python3
     sops
     step-cli

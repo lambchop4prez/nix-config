@@ -50,6 +50,13 @@ in
     # };
     zsh = {
         enable = true;
+        plugins = [
+            {
+                name = "powerlevel10k-config";
+                src = lib.cleanSource ./config;
+                file = "p10k.zsh";
+            }
+        ];
         initContent = ''
             # Don't require escaping globbing characters in zsh.
             unsetopt nomatch
@@ -59,11 +66,9 @@ in
             
             export PATH="$PATH:/Users/${user}/.dotnet/tools"
             export DOTNET_ROOT="${pkgs.dotnet-sdk}/share/dotnet"
-            # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-            # Initialization code that may require console input (password prompts, [y/n]
-            # confirmations, etc.) must go above this block; everything else may go below.
-            
-            source ~/.p10k.zsh
+            if [[ -r "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh" ]]; then
+                source "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh"
+            fi
         '';
         antidote = {
             enable = true;
@@ -78,7 +83,6 @@ in
                 "belak/zsh-utils path:prompt"
                 "belak/zsh-utils path:utility"
                 "belak/zsh-utils path:completion"
-                # "sindresorhus/pure     kind:fpath"
                 "mattmc3/zfunctions"
                 "zshzoo/macos conditional:is-macos"
                 "zsh-users/zsh-autosuggestions"
