@@ -4,7 +4,9 @@ with pkgs; [
     age-plugin-yubikey
     awscli2
     bat
+    clang
     colima
+    cmake
     curl
     direnv
     docker
@@ -13,6 +15,7 @@ with pkgs; [
     dotnet-sdk
     esphome
     fastfetch
+    freetype
     fluxcd
     gh
     gnumake
@@ -20,6 +23,7 @@ with pkgs; [
     go
     go-task
     grype
+    gtk3
     hackrf
     httpie
     ipcalc
@@ -30,6 +34,9 @@ with pkgs; [
     k9s
     kubectl
     kubernetes-helm
+    lld
+    libllvm
+    ninja
     nmap
     nodePackages.prettier
     nodePackages.npm
@@ -38,6 +45,7 @@ with pkgs; [
     platformio
     pnpm
     python3
+    sdl3
     sops
     step-cli
     syft
