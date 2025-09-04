@@ -19,8 +19,8 @@ in
     # };
     git = {
         enable = true;
-        userEmail = gituser;
-        userName = gitemail;
+        userEmail = gitemail;
+        userName = gituser;
         ignores = [".DS_Store" "*.swp"];
         extraConfig = {
             init.defaultBranch = "main";
