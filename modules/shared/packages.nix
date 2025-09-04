@@ -51,6 +51,7 @@ with pkgs; [
     syft
     talosctl
     terragrunt
+    uv
     wget
     yarn-berry
     yq
