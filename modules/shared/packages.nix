@@ -38,8 +38,9 @@ with pkgs; [
     libllvm
     ninja
     nmap
-    nodePackages.prettier
-    nodePackages.npm
+    nodejs_22
+    # nodePackages.prettier
+    # nodePackages.npm
     opentofu
     pre-commit
     platformio
@@ -51,6 +52,7 @@ with pkgs; [
     syft
     talosctl
     terragrunt
+    tree
     uv
     wget
     yarn-berry

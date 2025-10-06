@@ -15,7 +15,7 @@ in
         useUserPackages = true;
         users.${user} = {pkgs, config, lib, ...}:{
             home = {
-                stateVersion = "24.11";
+                stateVersion = "25.05";
                 packages = import ../shared/packages.nix { inherit config pkgs lib; };
             };
             programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };

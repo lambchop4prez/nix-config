@@ -20,5 +20,6 @@ in
     fonts.packages = with pkgs; [
         nerd-fonts.hack
         nerd-fonts.intone-mono
-     ];
+    ];
+    # services = with pkgs; (import ./services { inherit pkgs user });
 }
