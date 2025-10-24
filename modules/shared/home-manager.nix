@@ -37,6 +37,9 @@ in
             commit.verbose = true;
         };
     };
+    neovim = {
+        enable = true;
+    };
     # vscode = {
     #     enable = true;
     #     profiles.default.userSettings = {

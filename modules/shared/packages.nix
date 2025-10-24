@@ -12,6 +12,7 @@ with pkgs; [
     docker
     docker-buildx
     docker-compose
+    docker-credential-helpers
     dotnet-sdk
     esphome
     fastfetch
@@ -26,7 +27,7 @@ with pkgs; [
     gtk3
     hackrf
     httpie
-    ipcalc
+    # ipcalc
     iperf
     ipmitool
     jq
@@ -39,8 +40,6 @@ with pkgs; [
     ninja
     nmap
     nodejs_22
-    # nodePackages.prettier
-    # nodePackages.npm
     opentofu
     pre-commit
     platformio
