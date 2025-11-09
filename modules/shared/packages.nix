@@ -4,10 +4,12 @@ with pkgs; [
     age-plugin-yubikey
     awscli2
     bat
+    cargo
     clang
     colima
     cmake
     curl
+    cspell
     direnv
     docker
     docker-buildx
@@ -16,6 +18,7 @@ with pkgs; [
     dotnet-sdk
     esphome
     fastfetch
+    fd
     freetype
     fluxcd
     gh
@@ -31,6 +34,7 @@ with pkgs; [
     iperf
     ipmitool
     jq
+    just
     jwt-cli
     k9s
     kubectl
@@ -39,12 +43,13 @@ with pkgs; [
     libllvm
     ninja
     nmap
-    nodejs_22
+    nodejs_24
     opentofu
     pre-commit
     platformio
     pnpm
     python3
+    ripgrep
     sdl3
     sops
     step-cli
@@ -52,6 +57,7 @@ with pkgs; [
     talosctl
     terragrunt
     tree
+    universal-ctags
     uv
     wget
     yarn-berry

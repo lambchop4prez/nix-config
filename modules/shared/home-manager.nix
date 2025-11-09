@@ -19,22 +19,25 @@ in
     # };
     git = {
         enable = true;
-        userEmail = gitemail;
-        userName = gituser;
+
         ignores = [".DS_Store" "*.swp"];
-        extraConfig = {
-            init.defaultBranch = "main";
-            core.editor = "vim";
-            pull.rebase = false;
-            push.autoSetupRemote = true;
-            fetch.prune = true;
-            branch.sort = "-committerdate";
-            tag.sort = "-version:refname";
-            column.ui = "auto";
-            maintenance.auto = true;
-            maintenance.strategy = "incremental";
-            core.compression = 9;
-            commit.verbose = true;
+        settings = {
+          user = {
+            name = gituser;
+            email = gitemail;
+          };
+          init.defaultBranch = "main";
+          core.editor = "vim";
+          pull.rebase = false;
+          push.autoSetupRemote = true;
+          fetch.prune = true;
+          branch.sort = "-committerdate";
+          tag.sort = "-version:refname";
+          column.ui = "auto";
+          maintenance.auto = true;
+          maintenance.strategy = "incremental";
+          core.compression = 9;
+          commit.verbose = true;
         };
     };
     neovim = {
@@ -66,7 +69,7 @@ in
             alias gs='git status'
             alias gc='git commit'
             alias gp='git pull'
-            
+
             export PATH="$PATH:/Users/${user}/.dotnet/tools"
             export DOTNET_ROOT="${pkgs.dotnet-sdk}/share/dotnet"
             if [[ -r "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh" ]]; then
