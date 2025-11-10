@@ -59,6 +59,7 @@ with pkgs; [
     tree
     universal-ctags
     uv
+    vim
     wget
     yarn-berry
     yq

@@ -1,6 +1,10 @@
+.PHONY: switch
+switch:
+	sudo nix run nix-darwin -- switch --flake .
+
 .PHONY: update
 update:
-	sudo nix run nix-darwin -- switch --flake .
+	nix flake update
 
 .PHONY: clean
 clean:
