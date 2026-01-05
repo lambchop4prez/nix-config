@@ -44,6 +44,7 @@ with pkgs;
   kubernetes-helm
   lld
   libllvm
+  mise
   ninja
   nixfmt
   nmap

@@ -83,6 +83,7 @@ in
       if [[ -r "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh" ]]; then
           source "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh"
       fi
+      eval "$(mise activate zsh)"
     '';
     antidote = {
       enable = true;
