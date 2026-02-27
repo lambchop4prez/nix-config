@@ -57,7 +57,7 @@ in
             };
             dock = {
                 autohide = false;
-                orientation = "left";
+                orientation = "bottom";
                 show-recents = false;
 
                 wvous-tl-corner = 3; # Application Windows

@@ -42,20 +42,18 @@ with pkgs;
   k9s
   kubectl
   kubernetes-helm
-  lld
   libllvm
   mise
   ninja
   nixfmt
   nmap
-  nodejs_24
+  # nodejs_24
   opentofu
   pre-commit
   platformio
   pnpm
-  python3
+  # python3
   ripgrep
-  sdl3
   sops
   step-cli
   syft

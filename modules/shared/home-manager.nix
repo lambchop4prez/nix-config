@@ -48,6 +48,21 @@ in
       commit.verbose = false;
     };
   };
+  mise = {
+    enable = true;
+    enableZshIntegration = true;
+    package = pkgs.mise;
+    globalConfig = {
+      settings = {
+        experimental = true;
+      };
+      tools = {
+        node = "24";
+        python = ["3.13" "3.14"];
+
+      };
+    };
+  };
   neovim = {
     enable = true;
   };
