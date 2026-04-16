@@ -95,6 +95,7 @@ in
 
       export PATH="$PATH:/Users/${user}/.dotnet/tools"
       export DOTNET_ROOT="${pkgs.dotnet-sdk}/share/dotnet"
+      export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix)/lib:$(brew --prefix)/opt/libiconv/lib
       if [[ -r "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh" ]]; then
           source "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh"
       fi
