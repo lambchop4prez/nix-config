@@ -10,11 +10,11 @@ let
   gitemail = "lambchop4prez@users.noreply.github.com";
 in
 {
-  direnv = {
-    enable = true;
-    enableZshIntegration = true;
-    nix-direnv.enable = true;
-  };
+  # direnv = {
+  #   enable = false;
+  #   enableZshIntegration = true;
+  #   nix-direnv.enable = true;
+  # };
   # ghostty = {
   #     enable = true;
   #     enableZshIntegration = true;

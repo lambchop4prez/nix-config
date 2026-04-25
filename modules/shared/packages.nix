@@ -1,69 +1,42 @@
 { pkgs, ... }:
 with pkgs;
 [
-  age
-  age-plugin-yubikey
-  awscli2
   bat
-  bws
-  cargo
+  btop
   clang
   colima
   cmake
   curl
-  cspell
-  direnv
   docker
   docker-buildx
   docker-compose
   docker-credential-helpers
-  dotnet-sdk
-  esphome
   fastfetch
   fd
   freetype
-  fluxcd
   gh
   gnumake
   gnupg
-  go
-  go-task
-  grype
   gtk3
   hackrf
   htop
   httpie
-  # ipcalc
   iperf
   ipmitool
   jq
-  just
   jwt-cli
-  k9s
-  kubectl
-  kubernetes-helm
   libllvm
   mise
-  ninja
   nixfmt
   nmap
-  # nodejs_24
-  opentofu
-  pre-commit
   platformio
-  pnpm
-  # python3
   ripgrep
   sops
   step-cli
-  syft
-  talosctl
   terragrunt
   tree
   universal-ctags
-  uv
   vim
   wget
-  yarn-berry
   yq
 ]
