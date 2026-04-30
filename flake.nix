@@ -25,13 +25,9 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
-    nix-rosetta-builder = {
-      url = "github:cpick/nix-rosetta-builder";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = inputs@{ self, darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-bundle, homebrew-cask, nix-rosetta-builder }:
+  outputs = inputs@{ self, darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-bundle, homebrew-cask }:
   let
     user = "tmc";
     macs = {
@@ -72,7 +68,7 @@
                 "homebrew/homebrew-cask" = homebrew-cask;
                 "homebrew/homebrew-bundle" = homebrew-bundle;
               };
-              mutableTaps = false;
+              mutableTaps = true;
               autoMigrate = true;
             };
           }

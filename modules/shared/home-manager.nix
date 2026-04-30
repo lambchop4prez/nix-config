@@ -12,8 +12,6 @@ in
 {
   # direnv = {
   #   enable = false;
-  #   enableZshIntegration = true;
-  #   nix-direnv.enable = true;
   # };
   # ghostty = {
   #     enable = true;
@@ -63,9 +61,11 @@ in
       };
     };
   };
-  neovim = {
-    enable = true;
-  };
+  # neovim = {
+  #   enable = true;
+  #   # withPython3 = false;
+  #   # withRuby = false;
+  # };
   # vscode = {
   #     enable = true;
   #     profiles.default.userSettings = {

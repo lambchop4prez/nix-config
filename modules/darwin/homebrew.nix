@@ -6,6 +6,7 @@
         casks = pkgs.callPackage ./casks.nix {};
         brews = [
             { name = "libiconv"; }
+            { name = "neovim"; }
         ];
         masApps = {
             "Bitwarden" = 1352778147;
