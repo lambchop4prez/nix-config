@@ -3,7 +3,6 @@ with pkgs;
 [
   bat
   btop
-  clang
   colima
   cmake
   curl

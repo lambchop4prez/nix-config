@@ -57,6 +57,8 @@ in
       tools = {
         node = "24";
         python = ["3.13" "3.14"];
+        bun = "1.3.13";
+        "github:anomalyco/opencode" = "1.14.39";
 
       };
     };
@@ -92,9 +94,12 @@ in
       alias gs='git status'
       alias gc='git commit'
       alias gp='git pull'
+      alias ls='ls -lah --color=always'
+      alias rm='rm -I --preserve-root'
+      alias mkdir='mkdir -p'
 
-      export PATH="$PATH:/Users/${user}/.dotnet/tools"
-      export DOTNET_ROOT="${pkgs.dotnet-sdk}/share/dotnet"
+      export DOTNET_ROOT=/Users/${user}/.local/share/mise/dotnet-root
+      export PATH="$PATH:/Users/${user}/.dotnet/tools:/Users/${user}/.local/share/mise/dotnet-root"
       export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix)/lib:$(brew --prefix)/opt/libiconv/lib
       if [[ -r "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh" ]]; then
           source "/Users/${user}/.cache/p10k-instant-prompt-${user}.zsh"
