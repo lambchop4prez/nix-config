@@ -32,7 +32,6 @@ with pkgs;
   ripgrep
   sops
   step-cli
-  terragrunt
   tree
   universal-ctags
   vim

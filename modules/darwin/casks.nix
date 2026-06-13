@@ -1,14 +1,16 @@
 _:
 [
+  "android-studio"
   "balenaetcher"
   "coolterm"
   "drawio"
+  "dbeaver-community"
   "discord"
   "firefox"
   "google-chrome"
   "ghostty"
   "hex-fiend"
-  "keepassx"
+  "keepassxc"
   "openemu"
   "microsoft-teams"
   "mqtt-explorer"

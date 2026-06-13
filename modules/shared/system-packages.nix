@@ -1,5 +1,6 @@
 { pkgs, ... }:
 with pkgs; [
+    find
     git
     coreutils
     openssh
