@@ -7,6 +7,7 @@ _:
   "balenaetcher"
   "coolterm"
   "drawio"
+  "dbeaver-community"
   "discord"
   "firefox"
   "google-chrome"
