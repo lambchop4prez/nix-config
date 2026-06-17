@@ -53,6 +53,7 @@ in
     globalConfig = {
       settings = {
         experimental = true;
+        env_shell_expand = true;
       };
       tools = {
         node = "24";
@@ -94,8 +95,7 @@ in
       alias gs='git status'
       alias gc='git commit'
       alias gp='git pull'
-      alias ls='ls -lah --color=always'
-      alias rm='rm -I --preserve-root'
+      alias ll='ls -lah --color=always'
       alias mkdir='mkdir -p'
 
       export DOTNET_ROOT=/Users/${user}/.local/share/mise/dotnet-root

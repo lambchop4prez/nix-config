@@ -43,6 +43,9 @@
       "Seymour" = {
         system = "aarch64-darwin";
       };
+      "Tims-MacBook-Pro" = {
+	system = "aarch64-darwin";
+      };
     };
     macHosts = nixpkgs.lib.attrNames macs;
     darwinSystems = ["aarch64-darwin" "x86_64-darwin"];
