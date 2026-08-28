@@ -59,8 +59,9 @@ in
         node = "24";
         python = ["3.13" "3.14"];
         bun = "1.3.13";
-        "github:anomalyco/opencode" = "1.14.39";
-
+        deno = "2.9.2";
+        "github:anomalyco/opencode" = "1.17.18";
+        "aqua:pnpm/pnpm" = "11.12.0";
       };
     };
   };

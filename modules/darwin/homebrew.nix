@@ -7,6 +7,7 @@
         brews = [
             { name = "libiconv"; }
             { name = "neovim"; }
+            { name = "colima"; }
         ];
         onActivation = {
             autoUpdate = true;

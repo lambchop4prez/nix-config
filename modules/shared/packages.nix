@@ -3,7 +3,7 @@ with pkgs;
 [
   bat
   btop
-  colima
+  #colima
   cmake
   curl
   docker

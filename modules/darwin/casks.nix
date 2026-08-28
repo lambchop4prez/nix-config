@@ -1,5 +1,6 @@
 _:
 [
+  "affinity"
   "android-commandlinetools"
   "android-studio"
   "android-ndk"
@@ -17,9 +18,11 @@ _:
   "openemu"
   "mac-mouse-fix"
   "microsoft-teams"
+  "mongodb-compass"
   "mqtt-explorer"
   "multipatch"
   "openscad"
+  # "omlx"
   "qlmarkdown"
   "qlstephen"
   #"quicklook-json"
