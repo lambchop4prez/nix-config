@@ -25,9 +25,13 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
+    anomalyco-tap = {
+      url = "github:anomalyco/homebrew-tap";
+      flake = false;
+    };
   };
 
-  outputs = inputs@{ self, darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-bundle, homebrew-cask }:
+  outputs = inputs@{ self, darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-bundle, homebrew-cask, anomalyco-tap }:
   let
     user = "tmc";
     macs = {
@@ -70,7 +74,11 @@
                 "homebrew/homebrew-core" = homebrew-core;
                 "homebrew/homebrew-cask" = homebrew-cask;
                 "homebrew/homebrew-bundle" = homebrew-bundle;
+                # Key must be the tap folder name (homebrew- prefix)
+                "anomalyco/homebrew-tap" = anomalyco-tap;
               };
+              # Homebrew 6.x requires explicit tap trust (added at activation)
+              trust.taps = [ "anomalyco/tap" ];
               mutableTaps = true;
               autoMigrate = true;
             };

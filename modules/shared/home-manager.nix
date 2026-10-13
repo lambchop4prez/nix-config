@@ -59,8 +59,10 @@ in
         node = "24";
         python = ["3.13" "3.14"];
         deno = "2.9.6";
-        "github:anomalyco/opencode" = "1.18.25";
+        rust = "1.97.1";
         "aqua:pnpm/pnpm" = "12.1.0";
+        "oxfmt" = "0.69.0";
+        
       };
     };
   };
